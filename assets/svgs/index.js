@@ -1,0 +1,13 @@
+export { default as Home } from "./Home.svg";
+export { default as CalendarIcon } from "./CalendarIcon.svg";
+export { default as Location } from "./Location.svg";
+export { default as People } from "./People.svg";
+export { default as ProfileIcon } from "./ProfileIcon.svg";
+export { default as Logout } from "./Logout.svg";
+export { default as Shop } from "./Shop.svg";
+export { default as Receipt} from "./Receipt.svg";
+export { default as Settings } from "./Settings.svg";
+export { default as Wallet} from "./Wallet.svg";
+export { default as Google } from "./Google.svg";
+export { default as Envelope } from "./Envelope.svg";
+export { default as Lock } from "./Lock.svg";
