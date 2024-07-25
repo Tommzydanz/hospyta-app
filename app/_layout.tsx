@@ -24,6 +24,8 @@ export default function RootLayout() {
   const [loaded, error] = useFonts({
     SpaceMono: require("../assets/fonts/SpaceMono-Regular.ttf"),
     GothamPro: require("../assets/fonts/GothamPro.ttf"),
+    GothamPro_Light: require("../assets/fonts/GothamPro-Light.ttf"),
+    GothamPro_Medium: require("../assets/fonts/GothamPro-Medium.ttf"),
     GothamPro_Bold: require("../assets/fonts/GothamPro-Bold.ttf"),
     Axiforma: require("../assets/fonts/Axiforma-SemiBold.ttf"),
     ...FontAwesome.font,
