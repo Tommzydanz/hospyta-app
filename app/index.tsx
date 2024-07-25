@@ -10,7 +10,7 @@ import {
 import Colors from "../constants/Colors";
 import Navigator from "@/components/Navigator";
 import Button from "@/components/Button";
-import { HeaderText, MsgText, TitleText } from "@/components/StyledText";
+import { MediumText, MsgText} from "@/components/StyledText";
 
 export default function OnBoardingScreen() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -69,7 +69,7 @@ export default function OnBoardingScreen() {
 
         <View style={styles.content}>
           <MsgText style={styles.message}>{currentItem.message}</MsgText>
-          <TitleText
+          <MediumText
             style={{
               alignSelf: "flex-start",
               color: "#E32654",
@@ -77,12 +77,12 @@ export default function OnBoardingScreen() {
             }}
           >
             With Hospyta
-          </TitleText>
+          </MediumText>
           <Navigator to="/auth/signIn" style={styles.button}>
-            <MsgText style={styles.buttonText}>Sign In</MsgText>
+            <MediumText style={styles.buttonText}>Sign In</MediumText>
           </Navigator>
           <Navigator to="/auth/register" style={styles.buttonTransparent}>
-            <MsgText style={styles.buttonText}>Sign Up</MsgText>
+            <MediumText style={styles.buttonText}>Sign Up</MediumText>
           </Navigator>
         </View>
       </ImageBackground>
@@ -116,17 +116,19 @@ const styles = StyleSheet.create({
   },
   button: {
     width: "100%",
-    padding: 18,
+    paddingVertical: 12,
+    height: 48,
     marginBottom: 24,
-    borderRadius: 16,
+    borderRadius: 8,
     backgroundColor: Colors.light.blue,
   },
   buttonTransparent: {
     backgroundColor: "transparent",
     width: "100%",
-    padding: 20,
+    paddingVertical: 12,
+    height: 48,
     marginBottom: 18,
-    borderRadius: 16,
+    borderRadius: 8,
     borderWidth: 1,
     borderColor: Colors.light.background,
   },
