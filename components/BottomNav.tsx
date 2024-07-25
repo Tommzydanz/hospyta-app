@@ -9,7 +9,7 @@ import People from "@/assets/svgs/People.svg";
 import Shop from "@/assets/svgs/Shop.svg";
 import ProfileIcon from "@/assets/svgs/ProfileIcon.svg";
 import Navigator from "./Navigator";
-import { HeaderText } from "./StyledText";
+import { TitleText } from "./StyledText";
 
 // You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
 const items = [
@@ -79,14 +79,14 @@ export default function BottomNav() {
             >
               <item.icon color={Colors.light.blue_gray} />
               {isActive && (
-                <HeaderText
+                <TitleText
                   style={{
-                    fontWeight: "bold",
+                    fontSize: 14,
                     color: Colors.light.blue,
                   }}
                 >
                   {item.name}
-                </HeaderText>
+                </TitleText>
               )}
             </View>
           </Navigator>
