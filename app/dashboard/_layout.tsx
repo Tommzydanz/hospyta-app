@@ -9,10 +9,6 @@ import { DrawerProvider } from "../context/useDrawerContext";
 export default function AppLayout() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
-  const toggleDrawer = () => {
-    setIsDrawerOpen(!isDrawerOpen);
-  };
-
   return (
     <DrawerProvider>
       <Drawer>
